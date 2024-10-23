@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>Yi - Digital Safety Audit</title>    
+
+    <style>        
+        body {            
+            font-family: Arial, sans-serif;            
+            background-color: #f9f9f9;            
+            padding: 15px;        
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }        
+        .container {            
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        ul {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .form-container {            
+            background-color: #fff;            
+            padding: 15px;            
+            border-radius: 10px;            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);            
+            max-width: 400px;            
+            margin: 20px auto;        
+        }
+        .form-container h1 {            
+            text-align: center;            
+            color: #333;        
+        }
+        .form-container input[type="text"],        
+        .form-container input[type="email"] {            
+            width: 100%;            
+            padding: 10px;            
+            margin-bottom: 15px;            
+            border: 1px solid #ddd;            
+            border-radius: 5px;        
+        }
+        .form-container button {            
+            width: 100%;            
+            padding: 10px;            
+            background-color: #007bff;            
+            color: white;            
+            border: none;            
+            border-radius: 5px;            
+            cursor: pointer;        
+        }
+        .form-container button:hover {            
+            background-color: #0056b3;        
+        }
+        .app {            
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #answer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        #next-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #next-btn:hover {
+            background-color: #218838;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+       
+        .footer {
+             margin-top: auto;
+             background-color: #333;
+             color: white;
+             text-align: center;
+             padding: 10px 0;
+             position: relative;
+             width: 100%;
+         }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="header">
+        <h1>YI - DIGITAL SAFETY AUDIT</h1>
+        <h2></h2>
+    </div>
+
+    <div class="container">
+        <h2>Harnessing India's Massive Youth Power</h2><br>
+        <ul>
+            <li>Enabling Youth Leadership</li>
+            <li>Shaping Responsible Youth</li>
+            <li>Youth Skill Development & Training</li>
+            <li>Giving Voice To Young India</li>
+        </ul>
+
+        <p>Young Indians (Yi) is a movement for Indian youth to converge, lead, co-create, and influence India’s future. As an integral part of the Confederation of Indian Industry (CII), Yi’s mission to strengthen the future of India gives a stage and voice to the country’s next generation of changemakers.</p>
+    </div>
+
+    <div class="container">
+        <h1>DIGITAL SAFETY AUDIT</h1>
+        <h2>Welcome to the Digital Safety Audit</h2><br>
+        <p>The Digital Safety Audit is designed to assess your online presence and help you understand your digital habits. It will help you identify any weak spots in your online security and provide you with tips on how to improve.</p>
+        <p>This audit will help you navigate the vast digital landscape and ensure that you are taking the necessary steps to protect your personal information.</p>
+        <p>Think of this as your personal online security quiz, helping you spot any weak spots in your digital habits and giving you tips on how to improve.</p><br>
+        <h2>Masoom Digital Safety Audit</h2>
+        <h5>by Young Indians, Chennai</h5>
+    </div>
+
+    <a href="login.html">Go to Login Page</a>
+
+    <!-- Form Script -->
+    <script>        
+        document.getElementById('userForm').addEventListener('submit', function(event) {            
+            event.preventDefault(); // Prevent form submission            
+            const name = document.getElementById('name').value;            
+            const email = document.getElementById('email').value;            
+            alert(`Name: ${name}\nEmail: ${email}`);        
+        });    
+    </script><BR>
+     
+     <div class="footer">
+        An initiative by Young Indians - Building a Better Tomorrow
+    </div>
+
+</body>
+</html>
